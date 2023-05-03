@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CPEForm__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE( CPE__c , &apos;Excelente&apos;, &apos;Destacada capacidad para comunicarse de manera efectiva, expresar y comprender mensajes en diferentes contextos y según distintos propósitos. Utiliza variedad de soportes, un lenguaje verbal y no verbal apropiado.&apos;, &apos;Muy bueno&apos;, &apos;Muy buena capacidad para comunicarse y expresarse en forma clara y adecuada, y comprender mensajes en la mayoría de las situaciones comunicativas.&apos;, &apos;Bueno&apos;, &apos;Buena capacidad para comunicarse y expresarse en forma clara y adecuada y comprender mensajes en algunas situaciones comunicativas.&apos;, &apos;Regular&apos;, &apos;No siempre se expresa en forma efectiva y tiene algunas dificultades para comprender mensajes recibidos. En ocasiones no logra comunicar abiertamente su posición o se comunica con un lenguaje inapropiado.&apos;, &apos;Mejorable&apos;, &apos;Generalmente tiene dificultades para hacerse entender y expresarse, así como para comprender el mensaje transmitido.&apos;, NULL)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Descripción</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

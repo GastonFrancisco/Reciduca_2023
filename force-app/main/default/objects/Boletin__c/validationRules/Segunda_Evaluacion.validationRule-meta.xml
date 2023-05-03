@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Segunda_Evaluacion</fullName>
+    <active>true</active>
+    <description>Verifica si todos los campos de la Evaluacion1 fueron evaluados para permitir completar en la segunda</description>
+    <errorConditionFormula>AND(NOT(Eval1_completa__c), OR(ISCHANGED( AAASE__c ),
+ISCHANGED( CSE__c ),
+ISCHANGED( AyCSE__c ),
+ISCHANGED( PCSE__c ),
+ISCHANGED( OYPSE__c),
+ISCHANGED( TcOSE__c ),
+ISCHANGED( CASE__c )
+))</errorConditionFormula>
+    <errorMessage>La Primera Evaluación esta incompleta, no puede evaluar la segunda sin terminar la primera.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AyCSEForm__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE(  AyCSE__c , &apos;Excelente&apos;, &apos;Evidente capacidad para comprender textos leídos y extraer información relevante de diferentes fuentes a partir de identificar conceptos y establecer relaciones entre ellos, elaborar conclusiones y desarrollar ideas transferibles a otros ámbitos.&apos;, &apos;Muy bueno&apos;, &apos;Muy buena capacidad para comprender textos leídos y extraer información relevante de diferentes fuentes. Logra identificar conceptos, establecer relaciones, elaborar conclusiones y desarrollar ideas.&apos;, &apos;Bueno&apos;, &apos;Buena capacidad para comprender textos leídos y extraer información relevante. Logra identificar conceptos y tiene dificultades para establecer relaciones entre ellos y elaborar conclusiones o desarrollar ideas.&apos;, &apos;Regular&apos;, &apos;Ocasionalmente logra comprender textos leídos y extraer información relevante. Tiene dificultades para identificar conceptos y establecer relaciones. A veces puede elaborar conclusiones o desarrollar ideas.&apos;, &apos;Mejorable&apos;, &apos;Todavía encuentra dificultades para comprender los textos que lee. No logra seleccionar fuentes e identificar conceptos para extraer información y elaborar conclusiones o desarrollar ideas.&apos;, NULL)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Descripción</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

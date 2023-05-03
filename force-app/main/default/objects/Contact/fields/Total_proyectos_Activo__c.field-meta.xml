@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Total_proyectos_Activo__c</fullName>
+    <externalId>false</externalId>
+    <label>Total proyectos - Activo</label>
+    <summaryFilterItems>
+        <field>Asignaci_n__c.Estado__c</field>
+        <operation>equals</operation>
+        <value>Activo</value>
+    </summaryFilterItems>
+    <summaryForeignKey>Asignaci_n__c.Voluntario__c</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

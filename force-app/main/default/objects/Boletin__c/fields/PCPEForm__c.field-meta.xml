@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PCPEForm__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE( PCPE__c , &apos;Excelente&apos;,  &apos;Continuamente es capaz de adoptar una postura propia sobre diversas situaciones o problemáticas fundada en el análisis de información considerando distintas variables, perspectivas y argumentos, y tomar decisiones consecuentes respetando otras opiniones.&apos;, &apos;Muy bueno&apos;, &apos;Frecuentemente es capaz de adoptar una postura propia sobre una problemática o situación determinada fundada en el análisis de información, construir juicios razonados y tomar decisiones consecuentes respetando otras opiniones&apos;, &apos;Bueno&apos;, &apos;En ocasiones es capaz de adoptar una postura propia respecto de una problemática o situación determinada fundada en el análisis de información y tomar decisiones consecuentes respetando otras opiniones&apos;, &apos;Regular&apos;, &apos;Muestra dificultades para reflexionar y adoptar una postura propia respecto de una problemática o situación determinada y tomar decisiones consecuentes respetando otras opiniones.&apos;, &apos;Mejorable&apos;, &apos;Aún no logra reflexionar ni adoptar una postura propia y fundada respecto de una problemática o situación determinada.&apos;, NULL)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Descripción</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

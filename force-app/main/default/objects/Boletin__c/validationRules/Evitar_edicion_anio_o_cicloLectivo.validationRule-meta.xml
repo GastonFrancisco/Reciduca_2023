@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Evitar_edicion_anio_o_cicloLectivo</fullName>
+    <active>true</active>
+    <description>año o ciclo lectivo no debe editarse luego de ser creado el boletin</description>
+    <errorConditionFormula>( ISCHANGED(Anio_lectivo__c)  ||  ISCHANGED(Anio_calendario__c ) )</errorConditionFormula>
+    <errorMessage>No se puede editar el año o el ciclo lectivo.</errorMessage>
+</ValidationRule>

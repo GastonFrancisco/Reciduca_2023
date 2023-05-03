@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Promedio_de_Puntos__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(    Asistencias_a_Talleres__c = 0  , (Capacidad_para_aprender__c + Responsabilidad__c + comportamiento__c + autonomia__c + Flexibilidad__c + Comunicaci_n__c + Trabajo_en_Equipo__c + Puntualidad_y_asistencia__c)/8, (Capacidad_para_aprender__c + Responsabilidad__c + comportamiento__c + autonomia__c + Flexibilidad__c + Comunicaci_n__c + Trabajo_en_Equipo__c + Puntualidad_y_asistencia__c)/5)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Promedio de Puntos</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>1</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

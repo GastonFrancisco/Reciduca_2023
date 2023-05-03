@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>b_Esfuerzo__c</fullName>
+    <externalId>false</externalId>
+    <label>b. Esfuerzo</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Excelente</fullName>
+                <default>false</default>
+                <label>Excelente</label>
+            </value>
+            <value>
+                <fullName>Muy Bueno</fullName>
+                <default>false</default>
+                <label>Muy Bueno</label>
+            </value>
+            <value>
+                <fullName>Bueno</fullName>
+                <default>false</default>
+                <label>Bueno</label>
+            </value>
+            <value>
+                <fullName>Regular</fullName>
+                <default>false</default>
+                <label>Regular</label>
+            </value>
+            <value>
+                <fullName>Insuficiente</fullName>
+                <default>false</default>
+                <label>Insuficiente</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AAASEForm__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE(  AAASE__c , &apos;Excelente&apos;, &apos;Evidente iniciativa para aprender, conoce de las propias fortalezas y debilidades para establecer objetivos realizables, organizarse para cumplirlos pudiendo evaluar y reflexionar sobre su proceso de aprendizaje.&apos;, &apos;Muy bueno&apos;, &apos;Muy buena iniciativa para aprender y organizarse para establecer objetivos realizables en base a sus propias fortalezas y debilidades. Aún cuesta sostener el trabajo para alcanzarlos, evaluar el proceso e identificar posibles mejoras.&apos;, &apos;Bueno&apos;, &apos;Buena iniciativa para aprender y organizarse. En general establece objetivos realizables que podrían ajustarse mejor según sus necesidades. Reflexionar sobre el propio proceso de aprendizaje podría contribuir a que sean sostenibles.&apos;, &apos;Regular&apos;, &apos;En ocasiones tiene iniciativa para incorporar nuevos aprendizajes. Todavía necesita conocerse más para encontrar la forma de organizarse, identificar objetivos realizables y organizarse para sostenerlos en el tiempo.&apos;, &apos;Mejorable&apos;, &apos;Necesita incentivo/s externo/s para iniciar aprendizajes y los objetivos propuestos son difíciles de cumplir y sostener.&apos;, NULL)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Descripción</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

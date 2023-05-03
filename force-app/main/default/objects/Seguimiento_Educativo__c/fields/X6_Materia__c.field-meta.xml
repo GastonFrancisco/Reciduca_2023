@@ -1,0 +1,480 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>X6_Materia__c</fullName>
+    <externalId>false</externalId>
+    <label>6. Materia</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Administración</fullName>
+                <default>false</default>
+                <label>Administración</label>
+            </value>
+            <value>
+                <fullName>Ambiente y sociedad</fullName>
+                <default>false</default>
+                <label>Ambiente y sociedad</label>
+            </value>
+            <value>
+                <fullName>Arte</fullName>
+                <default>false</default>
+                <label>Arte</label>
+            </value>
+            <value>
+                <fullName>Arte-lenguaje complementario</fullName>
+                <default>false</default>
+                <label>Arte-lenguaje complementario</label>
+            </value>
+            <value>
+                <fullName>Arte y Ciencia</fullName>
+                <default>false</default>
+                <label>Arte y Ciencia</label>
+            </value>
+            <value>
+                <fullName>Biología</fullName>
+                <default>false</default>
+                <label>Biología</label>
+            </value>
+            <value>
+                <fullName>Catequesis</fullName>
+                <default>false</default>
+                <label>Catequesis</label>
+            </value>
+            <value>
+                <fullName>Centrales Eléctricas</fullName>
+                <default>false</default>
+                <label>Centrales Eléctricas</label>
+            </value>
+            <value>
+                <fullName>Ciencias de la Tierra</fullName>
+                <default>false</default>
+                <label>Ciencias de la Tierra</label>
+            </value>
+            <value>
+                <fullName>Ciencia y Tecnología</fullName>
+                <default>false</default>
+                <label>Ciencia y Tecnología</label>
+            </value>
+            <value>
+                <fullName>Computación aplicada</fullName>
+                <default>false</default>
+                <label>Computación aplicada</label>
+            </value>
+            <value>
+                <fullName>Comunicación</fullName>
+                <default>false</default>
+                <label>Comunicación</label>
+            </value>
+            <value>
+                <fullName>Comunicación, cultura y sociedad</fullName>
+                <default>false</default>
+                <label>Comunicación, cultura y sociedad</label>
+            </value>
+            <value>
+                <fullName>Costo y Comercio</fullName>
+                <default>false</default>
+                <label>Costo y Comercio</label>
+            </value>
+            <value>
+                <fullName>Derecho</fullName>
+                <default>false</default>
+                <label>Derecho</label>
+            </value>
+            <value>
+                <fullName>Derecho del Trabajo</fullName>
+                <default>false</default>
+                <label>Derecho del Trabajo</label>
+            </value>
+            <value>
+                <fullName>Diseño Robótico</fullName>
+                <default>false</default>
+                <label>Diseño Robótico</label>
+            </value>
+            <value>
+                <fullName>Diseño y Procesamientos Mecánicos</fullName>
+                <default>false</default>
+                <label>Diseño y Procesamientos Mecánicos</label>
+            </value>
+            <value>
+                <fullName>Economía política</fullName>
+                <default>false</default>
+                <label>Economía política</label>
+            </value>
+            <value>
+                <fullName>Economía y administración</fullName>
+                <default>false</default>
+                <label>Economía y administración</label>
+            </value>
+            <value>
+                <fullName>EDI- Espacios de definición institucional</fullName>
+                <default>false</default>
+                <label>EDI- Espacios de definición institucional</label>
+            </value>
+            <value>
+                <fullName>Educación física</fullName>
+                <default>false</default>
+                <label>Educación física</label>
+            </value>
+            <value>
+                <fullName>Electromecánica</fullName>
+                <default>false</default>
+                <label>Electromecánica</label>
+            </value>
+            <value>
+                <fullName>Electrónica Aplicada</fullName>
+                <default>false</default>
+                <label>Electrónica Aplicada</label>
+            </value>
+            <value>
+                <fullName>Electrónica Industrial</fullName>
+                <default>false</default>
+                <label>Electrónica Industrial</label>
+            </value>
+            <value>
+                <fullName>Electrotecnia II</fullName>
+                <default>false</default>
+                <label>Electrotecnia II</label>
+            </value>
+            <value>
+                <fullName>Emprendimientos y Desarrollo Local</fullName>
+                <default>false</default>
+                <label>Emprendimientos y Desarrollo Local</label>
+            </value>
+            <value>
+                <fullName>Energías Alternativas</fullName>
+                <default>false</default>
+                <label>Energías Alternativas</label>
+            </value>
+            <value>
+                <fullName>Filosofía</fullName>
+                <default>false</default>
+                <label>Filosofía</label>
+            </value>
+            <value>
+                <fullName>Finanzas</fullName>
+                <default>false</default>
+                <label>Finanzas</label>
+            </value>
+            <value>
+                <fullName>Física</fullName>
+                <default>false</default>
+                <label>Física</label>
+            </value>
+            <value>
+                <fullName>Francés</fullName>
+                <default>false</default>
+                <label>Francés</label>
+            </value>
+            <value>
+                <fullName>Geografía</fullName>
+                <default>false</default>
+                <label>Geografía</label>
+            </value>
+            <value>
+                <fullName>Geografia ambiental y política</fullName>
+                <default>false</default>
+                <label>Geografia ambiental y política</label>
+            </value>
+            <value>
+                <fullName>Gestión de los procesos productivos</fullName>
+                <default>false</default>
+                <label>Gestión de los procesos productivos</label>
+            </value>
+            <value>
+                <fullName>Gestión organizacional</fullName>
+                <default>false</default>
+                <label>Gestión organizacional</label>
+            </value>
+            <value>
+                <fullName>Historia</fullName>
+                <default>false</default>
+                <label>Historia</label>
+            </value>
+            <value>
+                <fullName>Historia Cultural Latinoamericana</fullName>
+                <default>false</default>
+                <label>Historia Cultural Latinoamericana</label>
+            </value>
+            <value>
+                <fullName>Imagen y Nuevos Medios</fullName>
+                <default>false</default>
+                <label>Imagen y Nuevos Medios</label>
+            </value>
+            <value>
+                <fullName>Imagen y procesos constructivos</fullName>
+                <default>false</default>
+                <label>Imagen y procesos constructivos</label>
+            </value>
+            <value>
+                <fullName>Impuestos</fullName>
+                <default>false</default>
+                <label>Impuestos</label>
+            </value>
+            <value>
+                <fullName>Inglés</fullName>
+                <default>false</default>
+                <label>Inglés</label>
+            </value>
+            <value>
+                <fullName>Instalaciones de BT y MT</fullName>
+                <default>false</default>
+                <label>Instalaciones de BT y MT</label>
+            </value>
+            <value>
+                <fullName>Instalaciones Industriales</fullName>
+                <default>false</default>
+                <label>Instalaciones Industriales</label>
+            </value>
+            <value>
+                <fullName>Instalación y Aplicaciones de la Energía</fullName>
+                <default>false</default>
+                <label>Instalación y Aplicaciones de la Energía</label>
+            </value>
+            <value>
+                <fullName>Laboratorio de ensayos industriales</fullName>
+                <default>false</default>
+                <label>Laboratorio de ensayos industriales</label>
+            </value>
+            <value>
+                <fullName>Laboratorio de Metrología y Control de Calidad</fullName>
+                <default>false</default>
+                <label>Laboratorio de Metrología y Control de Calidad</label>
+            </value>
+            <value>
+                <fullName>Laboratorio Mediciones Eléctricas</fullName>
+                <default>false</default>
+                <label>Laboratorio Mediciones Eléctricas</label>
+            </value>
+            <value>
+                <fullName>Legal y Práctica Impositiva</fullName>
+                <default>false</default>
+                <label>Legal y Práctica Impositiva</label>
+            </value>
+            <value>
+                <fullName>Legislación</fullName>
+                <default>false</default>
+                <label>Legislación</label>
+            </value>
+            <value>
+                <fullName>Líneas de Transmisión</fullName>
+                <default>false</default>
+                <label>Líneas de Transmisión</label>
+            </value>
+            <value>
+                <fullName>Literatura</fullName>
+                <default>false</default>
+                <label>Literatura</label>
+            </value>
+            <value>
+                <fullName>Mandos Automatismos</fullName>
+                <default>false</default>
+                <label>Mandos Automatismos</label>
+            </value>
+            <value>
+                <fullName>Mantenimiento eléctrico</fullName>
+                <default>false</default>
+                <label>Mantenimiento eléctrico</label>
+            </value>
+            <value>
+                <fullName>Mantenimiento y Montaje Electromecánico</fullName>
+                <default>false</default>
+                <label>Mantenimiento y Montaje Electromecánico</label>
+            </value>
+            <value>
+                <fullName>Maquinas Eléctricas y Aplicaciones</fullName>
+                <default>false</default>
+                <label>Maquinas Eléctricas y Aplicaciones</label>
+            </value>
+            <value>
+                <fullName>Máquinas Eléctricas y Automatismos</fullName>
+                <default>false</default>
+                <label>Máquinas Eléctricas y Automatismos</label>
+            </value>
+            <value>
+                <fullName>Máquinas equipos y accionamientos</fullName>
+                <default>false</default>
+                <label>Máquinas equipos y accionamientos</label>
+            </value>
+            <value>
+                <fullName>Marketing</fullName>
+                <default>false</default>
+                <label>Marketing</label>
+            </value>
+            <value>
+                <fullName>Matemática</fullName>
+                <default>false</default>
+                <label>Matemática</label>
+            </value>
+            <value>
+                <fullName>Matemática Aplicada</fullName>
+                <default>false</default>
+                <label>Matemática Aplicada</label>
+            </value>
+            <value>
+                <fullName>Metodología de estudio</fullName>
+                <default>false</default>
+                <label>Metodología de estudio</label>
+            </value>
+            <value>
+                <fullName>Micro y macro economía</fullName>
+                <default>false</default>
+                <label>Micro y macro economía</label>
+            </value>
+            <value>
+                <fullName>Partículas, energía y cosmología</fullName>
+                <default>false</default>
+                <label>Partículas, energía y cosmología</label>
+            </value>
+            <value>
+                <fullName>Política y ciudadanía</fullName>
+                <default>false</default>
+                <label>Política y ciudadanía</label>
+            </value>
+            <value>
+                <fullName>Prácticas profesionalizantes</fullName>
+                <default>false</default>
+                <label>Prácticas profesionalizantes</label>
+            </value>
+            <value>
+                <fullName>Problemática científica y social</fullName>
+                <default>false</default>
+                <label>Problemática científica y social</label>
+            </value>
+            <value>
+                <fullName>Procesos y Mantenimiento Industrial</fullName>
+                <default>false</default>
+                <label>Procesos y Mantenimiento Industrial</label>
+            </value>
+            <value>
+                <fullName>Proyecto</fullName>
+                <default>false</default>
+                <label>Proyecto</label>
+            </value>
+            <value>
+                <fullName>Proyecto de instalaciones eléctricas</fullName>
+                <default>false</default>
+                <label>Proyecto de instalaciones eléctricas</label>
+            </value>
+            <value>
+                <fullName>Proyecto de investigación</fullName>
+                <default>false</default>
+                <label>Proyecto de investigación</label>
+            </value>
+            <value>
+                <fullName>Proyecto de Producción de Artes Visuales</fullName>
+                <default>false</default>
+                <label>Proyecto de Producción de Artes Visuales</label>
+            </value>
+            <value>
+                <fullName>Proyecto Diseño y Ejecución de Instalaciones Eléctricas</fullName>
+                <default>false</default>
+                <label>Proyecto Diseño y Ejecución de Instalaciones Eléctricas</label>
+            </value>
+            <value>
+                <fullName>Proyecto organizacional</fullName>
+                <default>false</default>
+                <label>Proyecto organizacional</label>
+            </value>
+            <value>
+                <fullName>Proyecto y Diseño Electromecánico</fullName>
+                <default>false</default>
+                <label>Proyecto y Diseño Electromecánico</label>
+            </value>
+            <value>
+                <fullName>Proyecto y Diseño Electrónico</fullName>
+                <default>false</default>
+                <label>Proyecto y Diseño Electrónico</label>
+            </value>
+            <value>
+                <fullName>Química</fullName>
+                <default>false</default>
+                <label>Química</label>
+            </value>
+            <value>
+                <fullName>Química del carbono</fullName>
+                <default>false</default>
+                <label>Química del carbono</label>
+            </value>
+            <value>
+                <fullName>Radiación y vida</fullName>
+                <default>false</default>
+                <label>Radiación y vida</label>
+            </value>
+            <value>
+                <fullName>Recursos humanos</fullName>
+                <default>false</default>
+                <label>Recursos humanos</label>
+            </value>
+            <value>
+                <fullName>Seguridad e Higiene y Protección Ambiental</fullName>
+                <default>false</default>
+                <label>Seguridad e Higiene y Protección Ambiental</label>
+            </value>
+            <value>
+                <fullName>SIC-Contabilidad</fullName>
+                <default>false</default>
+                <label>SIC-Contabilidad</label>
+            </value>
+            <value>
+                <fullName>Sistemas de Comunicaciones</fullName>
+                <default>false</default>
+                <label>Sistemas de Comunicaciones</label>
+            </value>
+            <value>
+                <fullName>Sistemas de Control</fullName>
+                <default>false</default>
+                <label>Sistemas de Control</label>
+            </value>
+            <value>
+                <fullName>Sistemas Mecánicos</fullName>
+                <default>false</default>
+                <label>Sistemas Mecánicos</label>
+            </value>
+            <value>
+                <fullName>Sociedad y Estado</fullName>
+                <default>false</default>
+                <label>Sociedad y Estado</label>
+            </value>
+            <value>
+                <fullName>Sociología</fullName>
+                <default>false</default>
+                <label>Sociología</label>
+            </value>
+            <value>
+                <fullName>Taller</fullName>
+                <default>false</default>
+                <label>Taller</label>
+            </value>
+            <value>
+                <fullName>Técnicas de la información</fullName>
+                <default>false</default>
+                <label>Técnicas de la información</label>
+            </value>
+            <value>
+                <fullName>Tecnología de la información</fullName>
+                <default>false</default>
+                <label>Tecnología de la información</label>
+            </value>
+            <value>
+                <fullName>Termodinámica e instalaciones técnicas</fullName>
+                <default>false</default>
+                <label>Termodinámica e instalaciones técnicas</label>
+            </value>
+            <value>
+                <fullName>Termodinámica y Máquinas Térmicas</fullName>
+                <default>false</default>
+                <label>Termodinámica y Máquinas Térmicas</label>
+            </value>
+            <value>
+                <fullName>Trabajo y ciudadanía</fullName>
+                <default>false</default>
+                <label>Trabajo y ciudadanía</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

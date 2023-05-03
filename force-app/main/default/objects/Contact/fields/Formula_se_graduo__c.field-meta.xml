@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Formula_se_graduo__c</fullName>
+    <externalId>false</externalId>
+    <label>Formula Se graduo?</label>
+    <summaryFilterItems>
+        <field>Seguimiento_Educativo__c.Estado__c</field>
+        <operation>equals</operation>
+        <value>Graduado, Graduado en cierre del 3° trimestre, Graduado en mesas de Diciembre, Graduado en mesas de Febrero-Marzo, Graduado en instancias posteriores</value>
+    </summaryFilterItems>
+    <summaryForeignKey>Seguimiento_Educativo__c.Alumno__c</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

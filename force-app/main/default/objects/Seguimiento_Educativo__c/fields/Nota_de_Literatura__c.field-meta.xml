@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Nota_de_Literatura__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(ISPICKVAL( X1_Materia__c , &quot;Literatura&quot;),  X1_Calificaci_n__c ,
+
+IF(ISPICKVAL( X2_Materia__c , &quot;Literatura&quot;),  X2_Calificaci_n__c , 
+
+IF(ISPICKVAL( X3_Materia__c , &quot;Literatura&quot;),  X3_Calificaci_n__c , 
+
+IF(ISPICKVAL( X4_Materia__c , &quot;Literatura&quot;),  X4_Calificaci_n__c , 
+
+IF(ISPICKVAL( X5_Materia__c , &quot;Literatura&quot;),  X5_Calificaci_n__c , 
+
+IF(ISPICKVAL( X6_Materia__c , &quot;Literatura&quot;),  X6_Calificaci_n__c , 
+
+IF(ISPICKVAL( X7_Materia__c , &quot;Literatura&quot;),  X7_Calificaci_n__c , 
+
+IF(ISPICKVAL( X8_Materia__c , &quot;Literatura&quot;),  X8_Calificaci_n__c , 
+
+IF(ISPICKVAL( X9_Materia__c , &quot;Literatura&quot;),  X9_Calificaci_n__c , 
+
+IF(ISPICKVAL( X10_Materia__c , &quot;Literatura&quot;),  X10_Calificaci_n__c , 
+
+IF(ISPICKVAL( X11_Materia__c , &quot;Literatura&quot;),  X11_Calificaci_n__c , 
+
+IF(ISPICKVAL( X12_Materia__c , &quot;Literatura&quot;),  X12_Calificaci_n__c , 
+
+IF(ISPICKVAL( X13_Materia__c , &quot;Literatura&quot;),  X13_Calificaci_n__c , 
+
+IF(ISPICKVAL( X14_Materia__c , &quot;Literatura&quot;),  X14_Calificaci_n__c , 
+
+null))))))))))))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Nota de Literatura</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

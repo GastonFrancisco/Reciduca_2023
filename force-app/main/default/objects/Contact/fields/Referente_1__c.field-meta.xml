@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Referente_1__c</fullName>
+    <externalId>false</externalId>
+    <label>Referente 1</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Reciduca</fullName>
+                <default>false</default>
+                <label>Reciduca</label>
+            </value>
+            <value>
+                <fullName>SER</fullName>
+                <default>false</default>
+                <label>SER</label>
+            </value>
+            <value>
+                <fullName>PRMR</fullName>
+                <default>false</default>
+                <label>PRMR</label>
+            </value>
+            <value>
+                <fullName>AVU</fullName>
+                <default>false</default>
+                <label>AVU</label>
+            </value>
+            <value>
+                <fullName>Coordinacion Voluntarios</fullName>
+                <default>false</default>
+                <label>Coordinacion Voluntarios</label>
+            </value>
+            <value>
+                <fullName>Bloblo</fullName>
+                <default>false</default>
+                <label>Bloblo</label>
+            </value>
+            <value>
+                <fullName>Carola</fullName>
+                <default>false</default>
+                <label>Carola</label>
+            </value>
+            <value>
+                <fullName>Ceci</fullName>
+                <default>false</default>
+                <label>Ceci</label>
+            </value>
+            <value>
+                <fullName>Ceci Ilvento</fullName>
+                <default>false</default>
+                <label>Ceci Ilvento</label>
+            </value>
+            <value>
+                <fullName>David</fullName>
+                <default>false</default>
+                <label>David</label>
+            </value>
+            <value>
+                <fullName>Erci</fullName>
+                <default>false</default>
+                <label>Erci</label>
+            </value>
+            <value>
+                <fullName>Eugenie Tossounian</fullName>
+                <default>false</default>
+                <label>Eugenie Tossounian</label>
+            </value>
+            <value>
+                <fullName>Flor</fullName>
+                <default>false</default>
+                <label>Flor</label>
+            </value>
+            <value>
+                <fullName>Jorge</fullName>
+                <default>false</default>
+                <label>Jorge</label>
+            </value>
+            <value>
+                <fullName>Josefina Aramendi</fullName>
+                <default>false</default>
+                <label>Josefina Aramendi</label>
+            </value>
+            <value>
+                <fullName>Juan Malagrino</fullName>
+                <default>false</default>
+                <label>Juan Malagrino</label>
+            </value>
+            <value>
+                <fullName>Lino</fullName>
+                <default>false</default>
+                <label>Lino</label>
+            </value>
+            <value>
+                <fullName>Luis Firmat</fullName>
+                <default>false</default>
+                <label>Luis Firmat</label>
+            </value>
+            <value>
+                <fullName>Luis Riva</fullName>
+                <default>false</default>
+                <label>Luis Riva</label>
+            </value>
+            <value>
+                <fullName>Male</fullName>
+                <default>false</default>
+                <label>Male</label>
+            </value>
+            <value>
+                <fullName>Marcos Browne</fullName>
+                <default>false</default>
+                <label>Marcos Browne</label>
+            </value>
+            <value>
+                <fullName>Mariel</fullName>
+                <default>false</default>
+                <label>Mariel</label>
+            </value>
+            <value>
+                <fullName>Pata Carrere</fullName>
+                <default>false</default>
+                <label>Pata Carrere</label>
+            </value>
+            <value>
+                <fullName>Pato Caprile</fullName>
+                <default>false</default>
+                <label>Pato Caprile</label>
+            </value>
+            <value>
+                <fullName>Ricky Moreno</fullName>
+                <default>false</default>
+                <label>Ricky Moreno</label>
+            </value>
+            <value>
+                <fullName>Pia Rush</fullName>
+                <default>false</default>
+                <label>Pia Rush</label>
+            </value>
+            <value>
+                <fullName>Santi Sarachian</fullName>
+                <default>false</default>
+                <label>Santi Sarachian</label>
+            </value>
+            <value>
+                <fullName>Nico Federico</fullName>
+                <default>false</default>
+                <label>Nico Federico</label>
+            </value>
+            <value>
+                <fullName>Eleonora Goñi</fullName>
+                <default>false</default>
+                <label>Eleonora Goñi</label>
+            </value>
+            <value>
+                <fullName>Teresita Markous</fullName>
+                <default>false</default>
+                <label>Teresita Markous</label>
+            </value>
+            <value>
+                <fullName>Tarcisio</fullName>
+                <default>false</default>
+                <label>Tarcisio</label>
+            </value>
+            <value>
+                <fullName>Eze Ceballos</fullName>
+                <default>false</default>
+                <label>Eze Ceballos</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tercer_Promedio__c</fullName>
+    <description>Promedio de las calificaciones de las materias del tercer trimestre</description>
+    <externalId>false</externalId>
+    <formula>Suma_Tercer__c  /  Cantidad_Tercer__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Promedio Tercer Trimestre</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>1</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

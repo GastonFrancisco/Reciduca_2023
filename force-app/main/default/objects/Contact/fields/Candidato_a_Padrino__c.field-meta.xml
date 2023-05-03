@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Candidato_a_Padrino__c</fullName>
+    <description>Este campo sirve para que los tutores carguen si puede ser ahijado, dependiendo de su rendimiento, y que Carola lo vea automáticamente cuando tiene que relacionarlo con los padrinos.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>A: excelente desempeño y muy buena conducta
+B: buen desempeño y conducta
+C: conducta y desempeño regular.</inlineHelpText>
+    <label>Candidato a Padrino</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>A</fullName>
+                <default>false</default>
+                <label>A</label>
+            </value>
+            <value>
+                <fullName>B</fullName>
+                <default>false</default>
+                <label>B</label>
+            </value>
+            <value>
+                <fullName>C</fullName>
+                <default>false</default>
+                <label>C</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

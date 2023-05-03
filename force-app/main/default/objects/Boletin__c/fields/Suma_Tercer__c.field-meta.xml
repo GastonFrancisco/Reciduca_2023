@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Suma_Tercer__c</fullName>
+    <description>Suma de las calificaciones de las materias del tercer trimestre</description>
+    <externalId>false</externalId>
+    <label>Suma Tercer</label>
+    <summarizedField>Calificacion__c.Tercer_trimestre__c</summarizedField>
+    <summaryFilterItems>
+        <field>Calificacion__c.Tercer_trimestre__c</field>
+        <operation>greaterThan</operation>
+        <value>0</value>
+    </summaryFilterItems>
+    <summaryForeignKey>Calificacion__c.Boletin__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

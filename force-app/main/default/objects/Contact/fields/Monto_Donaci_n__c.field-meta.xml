@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Monto_Donaci_n__c</fullName>
+    <externalId>false</externalId>
+    <label>Monto Donación</label>
+    <summarizedField>Compromiso__c.Monto_en_pesos__c</summarizedField>
+    <summaryFilterItems>
+        <field>Compromiso__c.Estado__c</field>
+        <operation>equals</operation>
+        <value>Activo, Completo</value>
+    </summaryFilterItems>
+    <summaryFilterItems>
+        <field>Compromiso__c.Frecuencia__c</field>
+        <operation>equals</operation>
+        <value>Mensual, Anual, Cada 2 meses, Cada 3 meses, Cada 6 meses</value>
+    </summaryFilterItems>
+    <summaryForeignKey>Compromiso__c.Donante__c</summaryForeignKey>
+    <summaryOperation>max</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

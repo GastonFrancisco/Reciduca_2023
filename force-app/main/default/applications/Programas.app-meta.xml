@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <defaultLandingTab>standard-home</defaultLandingTab>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
+    <label>Programas</label>
+    <tabs>standard-File</tabs>
+    <tabs>standard-Lead</tabs>
+    <tabs>standard-Account</tabs>
+    <tabs>standard-Contact</tabs>
+    <tabs>Programa__c</tabs>
+    <tabs>Pertenencia_a_Programas__c</tabs>
+    <tabs>Seguimiento_Educativo__c</tabs>
+    <tabs>Pertencias_a_Estudiar_para_Graduarse__c</tabs>
+    <tabs>Petenencia_a_Becas_Terciarias__c</tabs>
+    <tabs>Seguimiento_Becas_Terciarias__c</tabs>
+    <tabs>Informe_trimestral__c</tabs>
+</CustomApplication>

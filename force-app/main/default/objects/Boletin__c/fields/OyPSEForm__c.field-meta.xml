@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OyPSEForm__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE( OYPSE__c , &apos;Excelente&apos;, &apos;Evidente capacidad para autogestionar, anticipar y planificar tareas eficientemente. Sabe proponerse metas realizables en el tiempo y establecer prioridades. Identifica los recursos necesarios y prevee soluciones ante posibles obstáculos.&apos;, &apos;Muy bueno&apos;, &apos;Muy buena capacidad para anticipar y organizar su trabajo de forma, establecer metas y cumplirlas en tiempo y forma. En ocasiones solicita ayuda para establecer prioridades y/o encontrar soluciones frente a obstáculos imprevistos.&apos;, &apos;Bueno&apos;, &apos;En general logra organizarse con sus tareas y cumplirlas. No siempre logra anticiparse a los tiempos y recursos necesarios. Suele necesitar ayuda para establecer prioridades y seguimiento para llegar a tiempo.&apos;, &apos;Regular&apos;, &apos;Ocasionalmente cumple con sus tareas sin tener un registro de las acciones necesarias para lograrlo. Frecuentemente necesita un seguimiento que impulse su accionar.&apos;, &apos;Mejorable&apos;, &apos;Tiende a trabajar en forma reactiva. Necesita orientación y seguimiento permanente para realizar sus tareas.&apos;,NULL)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Descripción</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

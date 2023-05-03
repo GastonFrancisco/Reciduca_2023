@@ -1,0 +1,277 @@
+<apex:page standardStylesheets="false" sidebar="true" standardController="Contact" extensions="ContactViewPDFController" renderAs="advanced_pdf" >
+    <head>
+        <style type="text/css">	
+            @page {
+        @top-center {
+            content: element(header);
+        }
+    }
+
+        div.header {
+        padding-top: 10px;
+        margin: 0px
+        position: running(header);
+        }
+
+        .pagenumber:before {
+        content: counter(page);
+        }
+
+        .pagecount:before {
+        content: counter(pages);
+
+        }
+        </style> 
+    </head>
+    <apex:pageBlock rendered="{!If(boleano == true, true, false)}">
+
+        <header>
+            <div class="header">
+                <img src="{!$Resource.ReciducaLogoYes}" width="100%" height="20%" style="padding-top:0px"/>
+            </div> 
+        </header>
+
+        <apex:outputText value="Verifique que el estudiante tenga una Pertenencia a Programa Educativo y la misma esté activa."
+        style="font-weight: bold; font-size: 25px;"></apex:outputText>
+        
+    </apex:pageBlock>
+    <apex:repeat rendered="{!If(boleano == false, true, false)}" value="{!resultList}" var="wrapper" id="repetidor">
+
+        <header>
+            <div class="header">
+                <img src="{!$Resource.ReciducaLogoYes}" width="100%" height="20%" style="padding-top:0px"/>
+            </div> 
+        </header>
+
+        <apex:pageBlock rendered="{!If(wrapper.programa.Estado__c == 'Activo', true, false)}">
+            <div style="page-break-inside: avoid;">
+                <div style="padding:10px text-align: center">
+                    <h1 style="font-family: sans-serif; text-align: center;size:12">
+                        Informe de Seguimiento<br/>
+                        Programa Educativo
+                    </h1>
+               
+                    <h2 style="text-align:right">
+                        <apex:outputText value="{0}{1,date, MM '/' yyyy}">
+                            <apex:param value="Fecha: "/>
+                            <apex:param value="{!Today()}"/><br/>
+                        </apex:outputText>
+                    </h2>
+                </div>
+                <div style="page-break-inside: avoid;">
+                    <div style="height: 140px; font-size:12pt;padding-top:20px; padding-left:10px;padding-bottom:5px; padding-right:4px; border:1px solid black;">
+                        <div>
+                            <apex:outputPanel rendered="{!if(wrapper.ImagenDeAlumno == null , true ,false)}">  
+                                <img src="{!$Resource.user_avatar}" style="float: right;" width="20%" height="20%"/>
+                            </apex:outputPanel>	
+                            <apex:outputPanel rendered="{!if(wrapper.ImagenDeAlumno == null , false ,true)}">  
+                                <img src="{!('/sfc/servlet.shepherd/version/download/'+ wrapper.ImagenDeAlumno)}"  style="float: right;" width="120" height="135"/>
+                            </apex:outputPanel>	
+                        </div>
+                        Estudiante: {!wrapper.boletin.Alumno__r.Name} <br/>
+                        <apex:outputText value="Fecha de Nacimiento: {!wrapper.boletin.Alumno__r.Birthdate}" /><br/>
+                        Edad: {!wrapper.boletin.Alumno__r.Edad__c} <br/>
+                        Estado: {!wrapper.seguimiento.Estado__c} <br/>
+                        Institución educativa: {!wrapper.boletin.Alumno__r.npsp__Primary_Affiliation__r.Name} <br/>
+                        Localidad: {!wrapper.boletin.Alumno__r.MailingCity} <br/>
+                        
+                    </div>
+                
+                <br/>
+                <br/>
+                <br/>
+                
+                <h2 style="color: #00B359; border-bottom:1px solid gray">
+                    Observaciones
+                </h2>
+                    <apex:outputText rendered="{!wrapper.boletin.Observaciones_Generales__c == null}" value="El estudiante no posee observaciones generales por el momento." escape="false" style="page-break-inside: avoid"></apex:outputText>
+                    <apex:outputText rendered="{!wrapper.boletin.Observaciones_Generales__c != null}" value="{!wrapper.boletin.Observaciones_Generales__c}" escape="false"></apex:outputText>
+                </div>  
+          
+                <div>
+                    <header>
+                        <div class="header">
+                            <img src="{!$Resource.ReciducaLogoYes}" width="100%" height="20%" style="padding-top:0px"/>
+                        </div> 
+                    </header> 
+                    <apex:pageBlock >
+                        
+                        <h2 style="color: #00B359; border-bottom:1px solid gray">
+                            Situación escolar
+                        </h2>
+                        
+                        <p>A continuación compartimos la valoración pedagógica reflejada en el boletín:</p>
+                        <br/>
+                        <apex:pageBlockTable value="{!wrapper.listaDeCalificaciones}" var="calificacion" style="width:100%; page-break-inside: avoid; text-align: center;border:1px solid #00B359; background: #00B359; color: white;">
+                            <apex:column headerValue="Materia" value="{!calificacion.Materia__r.Name}" style="border-top:0.5px solid #00B359; width:50%; margin-left:0px; background:#EAF1DE; color: black;"/>
+                            <apex:column headerValue="1° Evaluación" value="{!calificacion.Primer_trimestre__c}" style="border-top:1px solid #00B359; border-left:1px solid #00B359; text-align: center; width:100px; background:#EAF1DE; color: black;"/>
+                            <apex:column headerValue="2° Evaluación" value="{!calificacion.Segundo_trimestre__c}" style="border-top:1px solid #00B359; border-left:1px solid #00B359; text-align: center; width:100px; background:#EAF1DE; color: black;"/>
+                            <apex:column headerValue="3° Evaluación" value="{!calificacion.Tercer_trimestre__c}" rendered="{!If(wrapper.boletin.Cuatrimestral__c==true ,false,true)}" style="border-top:1px solid #00B359; border-left:1px solid #00B359; text-align: center; width:100px; background:#EAF1DE; color: black;"/>
+                            <apex:column headerValue="Final" value="{!calificacion.Final__c}" style="border-top:1px solid #00B359; border-left:1px solid #00B359; text-align: center; background:#EAF1DE; color: black;"/>
+                        </apex:pageBlockTable>
+                    </apex:pageBlock>
+                    <br/>
+                <h3>Materias Previas:</h3>
+                <apex:pageBlock >
+                    <apex:outputText rendered="{!wrapper.boletin.Materias_Previas__c == null}" value="El estudiante no posee materias previas" escape="false" style="page-break-inside: avoid"></apex:outputText>
+                    <apex:outputText rendered="{!wrapper.boletin.Materias_Previas__c != null}" value="{!HTMLENCODE(wrapper.boletin.Materias_Previas__c)}" escape="false" style="white-space:pre; page-break-inside: avoid"></apex:outputText>
+                </apex:pageBlock>
+                
+                <!--
+                     Se oculta por requerimiento del cliente 6/2/2023 quieren tenerlo como registro pero no el PDF
+
+                <h3>Asistencia a clases</h3>
+                <br/>  
+                    <apex:pageBlock rendered="{!If(wrapper.boletin.Cuatrimestral__c==true ,true,false)}" >  
+                    <table style="margin-top:15px;width:100%; border-collapse:collapse; page-break-inside: avoid; text-align: center">
+                        <tr>  
+                            <th style="background:#00B359; border:1px solid #00B359; color:white">1° Evaluación</th>
+                            <th style="background:#00B359; border:1px solid #00B359; color:white ">2° Evaluación</th>
+                        </tr>
+                        <tr style="border:1px solid #00B359">
+                            <td style="background:#EAF1DE; border:1px solid #00B359; text-align: center">{!wrapper.listaDeInasistencias[0].Primer_trimestre__c}</td>
+                            <td style="background:#EAF1DE;border:1px solid #00B359; text-align: center">{!wrapper.listaDeInasistencias[0].Segundo_trimestre__c}</td>
+                        </tr>
+                    </table>   
+                </apex:pageBlock>
+                <apex:pageBlock rendered="{!If(wrapper.boletin.Cuatrimestral__c==true ,false,true)}" >
+                    <table style="margin-top:15px;width:100%; border-collapse:collapse; page-break-inside: avoid; text-align: center">
+                        <tr>
+                            <th style="background:#00B359;border:1px solid #00B359;color:white">1° Evaluación</th>
+                            <th style="background:#00B359;border:1px solid #00B359;color:white">2° Evaluación</th>
+                            <th style="background:#00B359;border:1px solid #00B359;color:white">3° Evaluación</th>
+                        </tr>
+                        <tr style="border:1px solid #00B359">
+                            <td style="background:#EAF1DE;border:1px solid #00B359; text-align: center">{!wrapper.listaDeInasistencias[0].Primer_trimestre__c}</td>
+                            <td style="background:#EAF1DE;border:1px solid #00B359; text-align: center">{!wrapper.listaDeInasistencias[0].Segundo_trimestre__c}</td>
+                            <td style="background:#EAF1DE;border:1px solid #00B359; text-align: center">{!wrapper.listaDeInasistencias[0].Tercer_trimestre__c}</td>
+                        </tr>
+                    </table> 
+                </apex:pageBlock>-->    
+                </div>
+                
+                <div>      
+                    <apex:pageBlock >
+                        <header>
+                            <div class="header">
+                                <img src="{!$Resource.ReciducaLogoYes}" width="100%" height="20%" style="padding-top:0px"/>
+                            </div> 
+                        </header> 
+                        <h2 style="color: green; border-bottom:1px solid gray">
+                            Actividades del Programa
+                        </h2>
+                        <apex:outputText value="{!wrapper.actividadesPrograma}" escape="false" ></apex:outputText>
+                        
+                            <h3 style="color: black">
+                                Participación en el Programa Educativo
+                            </h3>                
+                            <table style="margin-top:15px;width:100%; border-collapse:collapse; page-break-inside: avoid; text-align: center">
+                                <tr>  
+                                    <th style="background:#00B359; border:1px solid #00B359; color:white">Acompañamiento Educativo</th>
+                                    <th style="background:#00B359; border:1px solid #00B359; color:white ">Espacio de Desarrollo Personal</th>
+                                    <th style="background:#00B359; border:1px solid #00B359; color:white ">Capacitaciones</th>
+                                    <th style="background:#00B359; border:1px solid #00B359; color:white ">Proyecto CAS</th>
+                                    
+                                </tr>
+                                <tr style="border:1px solid #00B359">
+                                    <td style="background:#EAF1DE; border:1px solid #00B359; text-align: center">{!wrapper.seguimiento.a_Espacio_de_Estudio__c}</td>
+                                    <td style="background:#EAF1DE;border:1px solid #00B359; text-align: center">{!wrapper.seguimiento.d_Espacio_Desarrollo_Personal__c}</td>
+                                    <td style="background:#EAF1DE;border:1px solid #00B359; text-align: center">{!wrapper.seguimiento.b_Capacitaciones__c}</td>
+                                    <td style="background:#EAF1DE;border:1px solid #00B359; text-align: center">{!wrapper.seguimiento.Proyecto_CAS__c}</td>
+                                </tr>
+                            </table>
+                            <table style="margin-top:15px;width:100%; border-collapse:collapse; page-break-inside: avoid; text-align: center">
+                                <tr>  
+                                    <th style="background:#00B359; border:1px solid #00B359; color:white ">Práctica Educativa</th>
+                                    <th style="background:#00B359; border:1px solid #00B359; color:white">Tipo de Práctica</th>
+                                    <th style="background:#00B359; border:1px solid #00B359; color:white ">Empresa donde la realizó</th>
+                                
+                                </tr>
+                                <tr style="border:1px solid #00B359">
+                                    <td style="background:#EAF1DE;border:1px solid #00B359; text-align: center">{!wrapper.seguimiento.c_Practica_Educativa__c}</td>
+                                    <td style="background:#EAF1DE; border:1px solid #00B359; text-align: center">{!wrapper.seguimiento.Tipo_de_Practica__c}</td>
+                                    <td style="background:#EAF1DE;border:1px solid #00B359; text-align: center">{!wrapper.seguimiento.Practica_en_Empresa__c}</td>                    
+                                </tr>
+                            </table>
+                            <div>
+                                <p><b>Observaciones de la Práctica:</b>&nbsp; <apex:outputText value="{!wrapper.seguimiento.c_Observaciones_Practica_Educativa__c}">
+                                </apex:outputText></p>
+                            </div> 
+                    </apex:pageBlock>
+                                       
+                    
+                    <apex:pageBlock >
+                        <h3 style="color: black">
+                            Asistencia a Espacios Educativos
+                        </h3>
+                        <table style="margin-top:15px;width:100%; border-collapse:collapse; page-break-inside: avoid; text-align: center">
+                            <tr>
+                                <th style="background:#00B359; border:1px solid #00B359; color:white">Mes</th>
+                                <th style="background:#00B359; border:1px solid #00B359; color:white">Espacios</th>
+                                <th style="background:#00B359; border:1px solid #00B359; color:white">Porcentaje de asistencia</th>
+                            </tr>
+                            <apex:repeat value="{!wrapper.asistenciaAEspacios}" var="monthKey">
+                                <tr style="border:1px solid #00B359">
+                                    <td style="background:#EAF1DE; border:1px solid #00B359">{!monthKey[0]}</td> 
+                                    <td style="background:#EAF1DE; border:1px solid #00B359">{!monthKey[1]}</td>
+                                    <td style="background:#EAF1DE; border:1px solid #00B359">{!monthKey[2]}</td>
+                                </tr>
+                            </apex:repeat>
+                        </table>
+                    </apex:pageBlock>
+                <br/>
+                <br/>
+                    <apex:pageBlock >
+                        <h3 style="color: black">
+                            Capacidades del Estudiante
+                        </h3>
+                        <apex:outputText rendered="{!IF(AND(wrapper.boletin.Eval1_completa__c == false, wrapper.boletin.Eval2_completa__c == false), true, false)}" value="El estudiante no tiene capacidades evaluadas." style="font-weight: bold; font-size: 25px; text-align: center;"></apex:outputText>
+                        <apex:pageBlockTable rendered="{!IF(AND(wrapper.boletin.Eval1_completa__c == true, NOT(wrapper.boletin.Eval2_completa__c) == true), true, false)}" 
+                        value="{!wrapper.capacidades}" var="calificacion" style="width:100%; page-break-inside: avoid; text-align: center;border:1px solid #000000; background: #efefef;">
+                            <apex:column headerValue="Capacidad" 
+                            value="{!calificacion[0]}" 
+                            style="{!CASE(calificacion[0], 
+                                    'Aprender a aprender', 'background: #acd8aa;',
+                                    'Comunicación', 'background: #ffe499;',
+                                    'Análisis y comprensión de la información', 'background:#fb9595;',
+                                    'Pensamiento crítico', 'background:#91c6e9;',
+                                    'Organización y planificación', 'background:#dfa4bb;',
+                                    'Trabajo con otros', 'background:#ffc99a;', 
+                                    'Ciudadanía responsable', 'background:#b6a7d5;',
+                                    'background: white;'
+                                    )} 
+                            border-top:0.5px solid #000000; 
+                            width:20%; 
+                            margin-left:0px; 
+                            font-weight: bold;"/>
+                            <apex:column headerValue="Evaluación" value="{!calificacion[1]}" style="border-top:1px solid #000000; border-left:1px solid #000000; text-align: center; width:20%; background:#ffffff; font-weight: bold;"/>
+                            <apex:column headerValue="Descripción" value="{!calificacion[2]}" style="border-top:1px solid #000000; border-left:1px solid #000000; text-align: center; width:60%; background:#ffffff"/>
+                        </apex:pageBlockTable>
+                        <apex:pageBlockTable rendered="{!IF(AND(wrapper.boletin.Eval1_completa__c == true, wrapper.boletin.Eval2_completa__c == true), true, false)}" 
+                            value="{!wrapper.capacidades}" var="calificacion" style="width:100%; page-break-inside: avoid; text-align: center;border:1px solid #000000; background: #efefef;">
+                            <apex:column headerValue="Capacidad" 
+                            value="{!calificacion[0]}" 
+                            style="{!CASE(calificacion[0], 
+                                    'Aprender a aprender', 'background: #acd8aa;',
+                                    'Comunicación', 'background: #ffe499;',
+                                    'Análisis y comprensión de la información', 'background:#fb9595;',
+                                    'Pensamiento crítico', 'background:#91c6e9;',
+                                    'Organización y planificación', 'background:#dfa4bb;',
+                                    'Trabajo con otros', 'background:#ffc99a;', 
+                                    'Ciudadanía responsable', 'background:#b6a7d5;',
+                                    'background: white;'
+                                    )} 
+                            border-top:0.5px solid #000000; 
+                            width:20%; 
+                            margin-left:0px; 
+                            font-weight: bold;"/>
+                            <apex:column headerValue="Evaluación" value="{!calificacion[3]}" style="border-top:1px solid #000000; border-left:1px solid #000000; text-align: center; width:20%; background:#ffffff; font-weight: bold;"/>
+                            <apex:column headerValue="Descripción" value="{!calificacion[4]}" style="border-top:1px solid #000000; border-left:1px solid #000000; text-align: center; width:60%; background:#ffffff"/>
+                        </apex:pageBlockTable>
+                    </apex:pageBlock>
+
+                </div>
+            </div>
+        </apex:pageBlock>
+    </apex:repeat>
+</apex:page>

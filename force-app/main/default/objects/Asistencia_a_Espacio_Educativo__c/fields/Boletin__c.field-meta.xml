@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Boletin__c</fullName>
+    <externalId>false</externalId>
+    <label>Boletin</label>
+    <referenceTo>Boletin__c</referenceTo>
+    <relationshipLabel>Asistencia a Espacios Educativos</relationshipLabel>
+    <relationshipName>Asistencia_a_Espacios_Educativos</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

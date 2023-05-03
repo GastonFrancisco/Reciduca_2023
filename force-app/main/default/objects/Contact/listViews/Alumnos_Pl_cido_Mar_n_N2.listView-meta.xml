@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Alumnos_Pl_cido_Mar_n_N2</fullName>
+    <columns>FULL_NAME</columns>
+    <columns>dni__c</columns>
+    <columns>CONTACT.BIRTHDATE</columns>
+    <columns>CONTACT.PHONE1</columns>
+    <columns>CONTACT.EMAIL</columns>
+    <columns>A_o_de_Ingreso_a_Reciduca__c</columns>
+    <columns>A_o_que_cursa__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ACCOUNT.NAME</field>
+        <operation>contains</operation>
+        <value>Plácido Marín</value>
+    </filters>
+    <filters>
+        <field>A_o_de_Ingreso_a_Reciduca__c</field>
+        <operation>equals</operation>
+        <value>2012</value>
+    </filters>
+    <filters>
+        <field>CONTACT.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Contact.Becarios</value>
+    </filters>
+    <filters>
+        <field>A_o_que_cursa__c</field>
+        <operation>contains</operation>
+        <value>6</value>
+    </filters>
+    <label>Alumnos Plácido Marín N2</label>
+    <language>es</language>
+</ListView>

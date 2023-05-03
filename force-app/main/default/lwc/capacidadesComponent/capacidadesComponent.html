@@ -1,0 +1,93 @@
+<template>
+    <lightning-card title="Capacidades">
+        <lightning-tabset>
+            <lightning-tab label="Primera Evaluación" class="slds-theme_shade">
+              <template if:true={capacidades}>
+                <table class="slds-table slds-table_cell-buffer slds-no-row-hover slds-table_bordered slds-table_fixed-layout" role="grid" aria-label="Example table in a Card">
+                  <thead>
+                    <tr class="slds-line-height_reset">
+                      <th class="" scope="col" style="width:0.5rem">
+                        <div class="slds-truncate" title="Name">Capacidad</div>
+                      </th>
+                      <th class="" scope="col" style="width:1.50rem">
+                        <div class="slds-truncate" title="Company">Calificación</div>
+                      </th>
+                      <th class="" scope="col" style="width:5.0rem">
+                        <div class="slds-truncate" title="Title">Descripción</div>
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <template for:each={primeraEvaluacion} for:item="obj" for:index="index">
+                      <tr class="slds-hint-parent" key={obj.fieldName}>
+                        <th scope="row">
+                          <div class="slds-truncate" title={obj.name} tabindex={obj.index}>{obj.name}</div>
+                        </th>
+                        <td role="gridcell">
+                          <lightning-combobox dropdown-alignment="auto" name="progress" data-id={obj.fieldName} label={obj.fieldName} value={obj.picklist} placeholder="Sin evaluar" options={options} onchange={handleChange} variant="label-hidden"></lightning-combobox>
+                        </td>
+                        <td class="slds-cell-wrap" role="gridcell">
+                          <div>{obj.form}</div>
+                        </td>
+                      </tr>
+                    </template>
+                  </tbody>
+                </table>
+              </template>
+            </lightning-tab>
+            <lightning-tab label="Segunda Evaluación" class="slds-theme_shade">
+              <template if:true={primeraEvaluacionCompleta}>
+                <template if:true={capacidades}>
+                  <table class="slds-table slds-table_cell-buffer slds-no-row-hover slds-table_bordered slds-table_fixed-layout" role="grid" aria-label="Example table in a Card">
+                    <thead>
+                      <tr class="slds-line-height_reset">
+                        <th class="" scope="col" style="width:0.5rem">
+                          <div class="slds-truncate" title="Name">Capacidad</div>
+                        </th>
+                        <th class="" scope="col" style="width:1.50rem">
+                          <div class="slds-truncate" title="Company">Calificación</div>
+                        </th>
+                        <th class="" scope="col" style="width:5.0rem">
+                          <div class="slds-truncate" title="Title">Descripción</div>
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <template for:each={segundaEvaluacion} for:item="obj" for:index="index">
+                        <tr class="slds-hint-parent" key={obj.fieldName}>
+                          <th scope="row">
+                            <div class="slds-truncate" title={obj.name} tabindex={obj.index}>{obj.name}</div>
+                          </th>
+                          <td role="gridcell">
+                            <lightning-combobox dropdown-alignment="auto" name="progress" data-id={obj.fieldName} label={obj.fieldName} value={obj.picklist} placeholder="Sin evaluar" options={options} onchange={handleChange} variant="label-hidden"></lightning-combobox>
+                          </td>
+                          <td class="slds-cell-wrap" role="gridcell">
+                            <div>{obj.form}</div>
+                          </td>
+                        </tr>
+                      </template>
+                    </tbody>
+                  </table>
+                </template>
+              </template>
+              <template if:false={primeraEvaluacionCompleta}>
+                <div class="slds-notify_container slds-is-relative">
+                  <div class="slds-notify slds-notify_toast slds-theme_error" role="status">
+                    <span class="slds-assistive-text">Error</span>
+                    <span class="slds-icon_container slds-icon-utility-error slds-m-right_small slds-no-flex slds-align-top" title="Description of icon when needed">
+                        <lightning-icon class="white-icon" icon-name="utility:error" alternative-text="Error!" title="Error"></lightning-icon>
+                    </span>
+                    <div class="slds-form-element">
+                      <h2 class="slds-text-heading_small">La Primera Evaluación esta incompleta, no puede evaluar la segunda sin terminar la primera.</h2>
+                    </div>
+                  </div>
+                </div>
+              </template>
+            </lightning-tab>
+            <div class="slds-m-top_medium slds-align_absolute-center" >
+              <lightning-button class="slds-m-top_small" variant="brand" type="submit" label="Guardar" onclick={handleSubmit} disabled={booleanVar}></lightning-button>
+              <lightning-button class="slds-m-top_small" label="Cancelar" onclick={handleReset}></lightning-button>
+            </div>
+        </lightning-tabset>
+    </lightning-card>
+</template>

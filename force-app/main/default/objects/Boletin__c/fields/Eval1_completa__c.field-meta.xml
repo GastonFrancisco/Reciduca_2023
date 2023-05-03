@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Eval1_completa__c</fullName>
+    <externalId>false</externalId>
+    <formula>NOT(OR(Text(AAAPE__c)=&quot;&quot;,Text(AAAPE__c)=&quot;No evaluado&quot;,
+Text(CPE__c)=&quot;&quot;,Text(CPE__c)=&quot;No evaluado&quot;,
+Text(AyCPE__c)=&quot;&quot;,Text(AyCPE__c)=&quot;No evaluado&quot;,
+Text(PCPE__c)=&quot;&quot;,Text(PCPE__c)=&quot;No evaluado&quot;,
+Text(OyPPE__c)=&quot;&quot;,Text(OyPPE__c)=&quot;No evaluado&quot;,
+Text(TcOPE__c)=&quot;&quot;,Text(TcOPE__c)=&quot;No evaluado&quot;,
+Text(CAPE__c)=&quot;&quot;,Text(CAPE__c)=&quot;No evaluado&quot;))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Capacidades P. Evaluación Completa?</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

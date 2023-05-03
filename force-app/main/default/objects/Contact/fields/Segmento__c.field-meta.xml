@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Segmento__c</fullName>
+    <externalId>false</externalId>
+    <label>Prospecto Venta Cena</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Corporativo</fullName>
+                <default>false</default>
+                <label>Corporativo</label>
+            </value>
+            <value>
+                <fullName>Cubiertos</fullName>
+                <default>false</default>
+                <label>Cubiertos</label>
+            </value>
+            <value>
+                <fullName>Fotografa de la noche</fullName>
+                <default>false</default>
+                <label>Fotografa de la noche</label>
+            </value>
+            <value>
+                <fullName>Invitar</fullName>
+                <default>false</default>
+                <label>Invitar</label>
+            </value>
+            <value>
+                <fullName>Solo mail</fullName>
+                <default>false</default>
+                <label>Solo mail</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

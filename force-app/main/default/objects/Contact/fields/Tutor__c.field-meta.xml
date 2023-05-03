@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tutor__c</fullName>
+    <externalId>false</externalId>
+    <label>Tutor</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Alejandra Avellaneda</fullName>
+                <default>false</default>
+                <label>Alejandra Avellaneda</label>
+            </value>
+            <value>
+                <fullName>Axel Greene</fullName>
+                <default>false</default>
+                <label>Axel Greene</label>
+            </value>
+            <value>
+                <fullName>Carolina Martín</fullName>
+                <default>false</default>
+                <label>Carolina Martín</label>
+            </value>
+            <value>
+                <fullName>Cruz Pereyra Moine</fullName>
+                <default>false</default>
+                <label>Cruz Pereyra Moine</label>
+            </value>
+            <value>
+                <fullName>Gabriela Muchenik</fullName>
+                <default>false</default>
+                <label>Gabriela Muchenik</label>
+            </value>
+            <value>
+                <fullName>Lucio Paez</fullName>
+                <default>false</default>
+                <label>Lucio Paez</label>
+            </value>
+            <value>
+                <fullName>Maria Navarro</fullName>
+                <default>false</default>
+                <label>Maria Navarro</label>
+            </value>
+            <value>
+                <fullName>Micaela Centurión</fullName>
+                <default>false</default>
+                <label>Micaela Centurión</label>
+            </value>
+            <value>
+                <fullName>Micaela Salas</fullName>
+                <default>false</default>
+                <label>Micaela Salas</label>
+            </value>
+            <value>
+                <fullName>Paula Muñiz</fullName>
+                <default>false</default>
+                <label>Paula Muñiz</label>
+            </value>
+            <value>
+                <fullName>Rocío González</fullName>
+                <default>false</default>
+                <label>Rocío González</label>
+            </value>
+            <value>
+                <fullName>Romina Bruni</fullName>
+                <default>false</default>
+                <label>Romina Bruni</label>
+            </value>
+            <value>
+                <fullName>Sabrina Campos</fullName>
+                <default>false</default>
+                <label>Sabrina Campos</label>
+            </value>
+            <value>
+                <fullName>Silvina Torella</fullName>
+                <default>false</default>
+                <label>Silvina Torella</label>
+            </value>
+            <value>
+                <fullName>Sofia Mecchia</fullName>
+                <default>false</default>
+                <label>Sofia Mecchia</label>
+            </value>
+            <value>
+                <fullName>Sofía Rodríguez</fullName>
+                <default>false</default>
+                <label>Sofía Rodríguez</label>
+            </value>
+            <value>
+                <fullName>Carolina Panadeiros</fullName>
+                <default>false</default>
+                <label>Carolina Panadeiros</label>
+            </value>
+            <value>
+                <fullName>Rocío Giménez Zapiola</fullName>
+                <default>false</default>
+                <label>Rocío Giménez Zapiola</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

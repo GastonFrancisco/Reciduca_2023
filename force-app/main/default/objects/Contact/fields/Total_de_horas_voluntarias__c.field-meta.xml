@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Total_de_horas_voluntarias__c</fullName>
+    <externalId>false</externalId>
+    <label>Total de horas voluntarias</label>
+    <summarizedField>Horas_Voluntarias__c.Total_en_horas__c</summarizedField>
+    <summaryForeignKey>Horas_Voluntarias__c.Voluntario__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

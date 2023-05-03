@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Candidato__c</fullName>
+    <externalId>false</externalId>
+    <label>Candidato</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>A</fullName>
+                <default>false</default>
+                <label>A</label>
+            </value>
+            <value>
+                <fullName>Cubierto</fullName>
+                <default>false</default>
+                <label>Cubierto</label>
+            </value>
+            <value>
+                <fullName>Donacion Honorarios</fullName>
+                <default>false</default>
+                <label>Donacion Honorarios</label>
+            </value>
+            <value>
+                <fullName>Donacion Productos</fullName>
+                <default>false</default>
+                <label>Donacion Productos</label>
+            </value>
+            <value>
+                <fullName>Donacion Servicios</fullName>
+                <default>false</default>
+                <label>Donacion Servicios</label>
+            </value>
+            <value>
+                <fullName>E</fullName>
+                <default>false</default>
+                <label>E</label>
+            </value>
+            <value>
+                <fullName>Mesa Corporativa</fullName>
+                <default>false</default>
+                <label>Mesa Corporativa</label>
+            </value>
+            <value>
+                <fullName>Publicidad</fullName>
+                <default>false</default>
+                <label>Publicidad</label>
+            </value>
+            <value>
+                <fullName>Sponsor</fullName>
+                <default>false</default>
+                <label>Sponsor</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>5</visibleLines>
+</CustomField>

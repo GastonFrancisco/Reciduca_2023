@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>d_Espacio_Desarrollo_Personal__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Para N1 en el 3er informe va proyecto CAS.</inlineHelpText>
+    <label>Espacio Desarrollo Personal</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Excelente</fullName>
+                <default>false</default>
+                <label>Excelente</label>
+            </value>
+            <value>
+                <fullName>Muy bueno</fullName>
+                <default>false</default>
+                <label>Muy bueno</label>
+            </value>
+            <value>
+                <fullName>Bueno</fullName>
+                <default>false</default>
+                <label>Bueno</label>
+            </value>
+            <value>
+                <fullName>Regular</fullName>
+                <default>false</default>
+                <label>Regular</label>
+            </value>
+            <value>
+                <fullName>No alcanza las expectativas</fullName>
+                <default>false</default>
+                <label>No alcanza las expectativas</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

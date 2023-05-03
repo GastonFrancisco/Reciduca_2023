@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Monto_colaboracion_anual_2010__c</fullName>
+    <description>Indica la colaboracion a Reciduca fuera de la cena</description>
+    <externalId>false</externalId>
+    <label>Monto colaboracion anual 2010</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Currency</type>
+</CustomField>

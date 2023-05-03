@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>D_nde_realiz_la_pr_ctica_y_su_desempe_o__c</fullName>
+    <description>Banco de alimentos</description>
+    <externalId>false</externalId>
+    <label>¿Dónde realizó la práctica educativa?</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>TextArea</type>
+</CustomField>

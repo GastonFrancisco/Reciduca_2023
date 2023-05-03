@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Relacion_con_Referente__c</fullName>
+    <externalId>false</externalId>
+    <label>Relacion con Referente</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Amigo</fullName>
+                <default>false</default>
+                <label>Amigo</label>
+            </value>
+            <value>
+                <fullName>Cliente</fullName>
+                <default>false</default>
+                <label>Cliente</label>
+            </value>
+            <value>
+                <fullName>Companero de trabajo</fullName>
+                <default>false</default>
+                <label>Companero de trabajo</label>
+            </value>
+            <value>
+                <fullName>Conocido</fullName>
+                <default>false</default>
+                <label>Conocido</label>
+            </value>
+            <value>
+                <fullName>Familiar</fullName>
+                <default>false</default>
+                <label>Familiar</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

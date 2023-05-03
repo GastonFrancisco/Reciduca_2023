@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Seguido_por__c</fullName>
+    <description>Quien sigue al contacto y registra la evolucion</description>
+    <externalId>false</externalId>
+    <label>Seguido por</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Llamador Principal</fullName>
+                <default>false</default>
+                <label>Llamador Principal</label>
+            </value>
+            <value>
+                <fullName>Llamador 1</fullName>
+                <default>false</default>
+                <label>Llamador 1</label>
+            </value>
+            <value>
+                <fullName>Llamador 2</fullName>
+                <default>false</default>
+                <label>Llamador 2</label>
+            </value>
+            <value>
+                <fullName>Solo mail</fullName>
+                <default>false</default>
+                <label>Solo mail</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

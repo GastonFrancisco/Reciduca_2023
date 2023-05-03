@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cantidad_Primer__c</fullName>
+    <description>Cantidad de materias en el primer trimestre</description>
+    <externalId>false</externalId>
+    <label>Cantidad Primer</label>
+    <summaryFilterItems>
+        <field>Calificacion__c.Primer_trimestre__c</field>
+        <operation>greaterThan</operation>
+        <value>0</value>
+    </summaryFilterItems>
+    <summaryForeignKey>Calificacion__c.Boletin__c</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

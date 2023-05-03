@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tipo_de_Participacion_Cena_2011__c</fullName>
+    <externalId>false</externalId>
+    <label>Tipo de Participacion Cena 2011</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Cubierto individual</fullName>
+                <default>false</default>
+                <label>Cubierto individual</label>
+            </value>
+            <value>
+                <fullName>Donacion honorarios/servicios</fullName>
+                <default>false</default>
+                <label>Donacion honorarios/servicios</label>
+            </value>
+            <value>
+                <fullName>Donacion mensual</fullName>
+                <default>false</default>
+                <label>Donacion mensual</label>
+            </value>
+            <value>
+                <fullName>Donacion noche unica vez</fullName>
+                <default>false</default>
+                <label>Donacion noche unica vez</label>
+            </value>
+            <value>
+                <fullName>Donacion productos</fullName>
+                <default>false</default>
+                <label>Donacion productos</label>
+            </value>
+            <value>
+                <fullName>Mesa 10 cubiertos</fullName>
+                <default>false</default>
+                <label>Mesa 10 cubiertos</label>
+            </value>
+            <value>
+                <fullName>Mesa Directorio</fullName>
+                <default>false</default>
+                <label>Mesa Directorio</label>
+            </value>
+            <value>
+                <fullName>Mesa Escritorio</fullName>
+                <default>false</default>
+                <label>Mesa Escritorio</label>
+            </value>
+            <value>
+                <fullName>Mesa Mostrador</fullName>
+                <default>false</default>
+                <label>Mesa Mostrador</label>
+            </value>
+            <value>
+                <fullName>Mesa Pupitre</fullName>
+                <default>false</default>
+                <label>Mesa Pupitre</label>
+            </value>
+            <value>
+                <fullName>Publicidad Contratapa</fullName>
+                <default>false</default>
+                <label>Publicidad Contratapa</label>
+            </value>
+            <value>
+                <fullName>Publicidad Media Pagina</fullName>
+                <default>false</default>
+                <label>Publicidad Media Pagina</label>
+            </value>
+            <value>
+                <fullName>Publicidad Pagina Entera</fullName>
+                <default>false</default>
+                <label>Publicidad Pagina Entera</label>
+            </value>
+            <value>
+                <fullName>Publicidad Retiracion Tapa/Contratapa</fullName>
+                <default>false</default>
+                <label>Publicidad Retiracion Tapa/Contratapa</label>
+            </value>
+            <value>
+                <fullName>Sponsor</fullName>
+                <default>false</default>
+                <label>Sponsor</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>3</visibleLines>
+</CustomField>

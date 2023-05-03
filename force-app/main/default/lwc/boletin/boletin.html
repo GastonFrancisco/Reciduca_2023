@@ -1,0 +1,26 @@
+<template>
+
+    <!--muestra las calificaciones del boletín-->
+    <template if:true={calificaciones.length}>
+        <lightning-card title="Calificaciones">
+            <div class="slds-scrollable_y">
+                <lightning-datatable key-field="Id" data={calificaciones} onsave={saveCalificaciones}
+                    columns={columnsCalificacion} onrowaction={handleRowApprove} hide-checkbox-column>
+                </lightning-datatable>
+            </div>
+        </lightning-card>
+    </template>
+
+    <br />
+
+    <!--muestra las inasistencias del boletín-->
+    <template if:true={inasistencias.length}>
+        <lightning-card title="Inasistencias">
+            <div class="slds-scrollable_y">
+                <lightning-datatable key-field="Id" data={inasistencias} onsave={saveInasistencia}
+                    columns={columnsInasistencia} hide-checkbox-column>
+                </lightning-datatable>
+            </div>
+        </lightning-card>
+    </template>
+</template>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Nombre_Completo_de_Contacto</fullName>
+    <active>true</active>
+    <description>verifico que first name no debe estar en blanco al crear el contacto</description>
+    <errorConditionFormula>ISBLANK(FirstName)</errorConditionFormula>
+    <errorMessage>El contacto debe tener Nombre y Apellidos</errorMessage>
+</ValidationRule>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CFC_N1</fullName>
+    <columns>NAME</columns>
+    <columns>Alumno__c</columns>
+    <columns>Programa__c</columns>
+    <columns>Estado__c</columns>
+    <columns>Fecha_de_inicio__c</columns>
+    <columns>Fecha_de_fin__c</columns>
+    <columns>Seguimiento_Educativo_del__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Programa__c</field>
+        <operation>contains</operation>
+        <value>NIVEL I</value>
+    </filters>
+    <label>CFC N1 Todos</label>
+    <language>es</language>
+</ListView>

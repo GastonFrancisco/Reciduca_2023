@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Materias_que_debe__c</fullName>
+    <externalId>false</externalId>
+    <label>Materias que debe</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Matemática</fullName>
+                <default>false</default>
+                <label>Matemática</label>
+            </value>
+            <value>
+                <fullName>Física</fullName>
+                <default>false</default>
+                <label>Física</label>
+            </value>
+            <value>
+                <fullName>Historia</fullName>
+                <default>false</default>
+                <label>Historia</label>
+            </value>
+            <value>
+                <fullName>Lengua</fullName>
+                <default>false</default>
+                <label>Lengua</label>
+            </value>
+            <value>
+                <fullName>Geografía</fullName>
+                <default>false</default>
+                <label>Geografía</label>
+            </value>
+            <value>
+                <fullName>Otra</fullName>
+                <default>false</default>
+                <label>Otra</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>6</visibleLines>
+</CustomField>

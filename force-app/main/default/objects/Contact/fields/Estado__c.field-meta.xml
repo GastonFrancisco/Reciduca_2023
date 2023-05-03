@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Estado__c</fullName>
+    <externalId>false</externalId>
+    <label>Estado</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Cursando</fullName>
+                <default>false</default>
+                <label>Cursando</label>
+            </value>
+            <value>
+                <fullName>Adeuda materias</fullName>
+                <default>false</default>
+                <label>Adeuda materias</label>
+            </value>
+            <value>
+                <fullName>Egresado</fullName>
+                <default>false</default>
+                <label>Egresado</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

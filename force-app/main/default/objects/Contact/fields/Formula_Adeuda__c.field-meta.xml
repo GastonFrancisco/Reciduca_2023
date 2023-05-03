@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Formula_Adeuda__c</fullName>
+    <externalId>false</externalId>
+    <label>Formula Adeuda?</label>
+    <summaryFilterItems>
+        <field>Seguimiento_Educativo__c.Estado__c</field>
+        <operation>equals</operation>
+        <value>Egresado pero adeuda materias</value>
+    </summaryFilterItems>
+    <summaryForeignKey>Seguimiento_Educativo__c.Alumno__c</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

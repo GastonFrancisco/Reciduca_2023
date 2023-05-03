@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cantidad_Final__c</fullName>
+    <description>Cantidad de materias del trimestre final</description>
+    <externalId>false</externalId>
+    <label>Cantidad Final</label>
+    <summaryFilterItems>
+        <field>Calificacion__c.Final__c</field>
+        <operation>greaterThan</operation>
+        <value>0</value>
+    </summaryFilterItems>
+    <summaryForeignKey>Calificacion__c.Boletin__c</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

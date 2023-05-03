@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Asistio_Cena_2010__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Compro entradas corporativas y asistio efectivamente a la cena</description>
+    <externalId>false</externalId>
+    <label>Asistio Cena 2010</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

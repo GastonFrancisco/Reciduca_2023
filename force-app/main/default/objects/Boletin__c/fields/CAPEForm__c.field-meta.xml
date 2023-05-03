@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CAPEForm__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE(  CAPE__c , &apos;Excelente&apos;, &apos;Asume responsabilidades y se involucra con su comunidad. Participa activamente y promueve el compromiso por el bien común.&apos;, &apos;Muy bueno&apos;, &apos;Generalmente es responsable. Responde por sus actos a los compromisos asumidos y contribuye al bien común.&apos;, &apos;Bueno&apos;, &apos;Asume responsabilidades y compromisos básicos que le corresponden. Reconoce las implicancias de sus actos y de lo demás y, en algunas ocasiones, interviene.&apos;, &apos;Regular&apos;, &apos;No siempre asume sus responsabilidades. Tiene dificultades para intervenir y reconocer las implicancias de sus actos y de los demás.&apos;, &apos;Mejorable&apos;, &apos;Evita responsabilidades y no reconoce las implicancias de los propios actos. Muestra cierta indiferencia hacia su comunidad.&apos;, NULL)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Descripción</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

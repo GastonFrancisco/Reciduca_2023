@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TcOPEForm__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE( TcOPE__c, &apos;Excelente&apos;, &apos;Siempre presta atención a las necesidades de los otros y promueve el funcionamiento del grupo en pos de los objetivos comunes integrando las distintas opiniones.&apos;, &apos;Muy bueno&apos;, &apos;Muestra compromiso en el trabajo con otros. Presta atención a las necesidades de los demás y colabora con el logro de los objetivos comunes.&apos;, &apos;Bueno&apos;, &apos;A menudo colabora en el trabajo con otros. Reconoce las necesidades de los demás.&apos;, &apos;Regular&apos;, &apos;En situaciones de trabajo con otros solo colabora cuando le es requerido o cuando es necesario. No siempre reconoce las necesidades de los otros.&apos;, &apos;Mejorable&apos;, &apos;Muestra baja predisposición a la colaboración y resistencia a las dinámicas grupales. Es intransigente y se ofende cuando no siguen su idea.&apos;, NULL)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Descripción</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

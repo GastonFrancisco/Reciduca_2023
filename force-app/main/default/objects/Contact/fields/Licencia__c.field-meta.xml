@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Licencia__c</fullName>
+    <externalId>false</externalId>
+    <label>Licencia?</label>
+    <summaryForeignKey>Pertenencia_a_Programas__c.Alumno__c</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

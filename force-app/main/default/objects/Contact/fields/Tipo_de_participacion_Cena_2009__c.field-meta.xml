@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tipo_de_participacion_Cena_2009__c</fullName>
+    <externalId>false</externalId>
+    <label>Tipo de participacion Cena 2009</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Cubierto personal</fullName>
+                <default>false</default>
+                <label>Cubierto personal</label>
+            </value>
+            <value>
+                <fullName>Donacion de la noche mensual</fullName>
+                <default>false</default>
+                <label>Donacion de la noche mensual</label>
+            </value>
+            <value>
+                <fullName>Donacion de la noche unica vez</fullName>
+                <default>false</default>
+                <label>Donacion de la noche unica vez</label>
+            </value>
+            <value>
+                <fullName>Donacion productos</fullName>
+                <default>false</default>
+                <label>Donacion productos</label>
+            </value>
+            <value>
+                <fullName>Mesa 10 cubiertos</fullName>
+                <default>false</default>
+                <label>Mesa 10 cubiertos</label>
+            </value>
+            <value>
+                <fullName>Mesa Sponsor</fullName>
+                <default>false</default>
+                <label>Mesa Sponsor</label>
+            </value>
+            <value>
+                <fullName>Publicidad</fullName>
+                <default>false</default>
+                <label>Publicidad</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>3</visibleLines>
+</CustomField>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Motivo_de_Baja__c</fullName>
+    <externalId>false</externalId>
+    <label>Motivo de Baja</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Inscripto no inicia</fullName>
+                <default>false</default>
+                <label>Inscripto no inicia</label>
+            </value>
+            <value>
+                <fullName>No le gustan tareas/ espacios</fullName>
+                <default>false</default>
+                <label>Desinterés por el Programa</label>
+            </value>
+            <value>
+                <fullName>Prioridades</fullName>
+                <default>false</default>
+                <label>Prioriza otras actividades o responsabilidades</label>
+            </value>
+            <value>
+                <fullName>Dejó la Escuela</fullName>
+                <default>false</default>
+                <label>Abandono Escolar</label>
+            </value>
+            <value>
+                <fullName>Se cambió de Escuela</fullName>
+                <default>false</default>
+                <label>Cambio de escuela</label>
+            </value>
+            <value>
+                <fullName>Trabajo</fullName>
+                <default>false</default>
+                <label>Trabajo</label>
+            </value>
+            <value>
+                <fullName>Embarazo</fullName>
+                <default>false</default>
+                <label>Embarazo</label>
+            </value>
+            <value>
+                <fullName>Otros</fullName>
+                <default>false</default>
+                <label>Otros</label>
+            </value>
+            <value>
+                <fullName>Terminó nivel 0</fullName>
+                <default>false</default>
+                <label>Terminó nivel 0</label>
+            </value>
+            <value>
+                <fullName>Terminó nivel 1</fullName>
+                <default>false</default>
+                <label>Terminó nivel 1</label>
+            </value>
+            <value>
+                <fullName>Terminó el programa</fullName>
+                <default>false</default>
+                <label>Terminó el programa</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

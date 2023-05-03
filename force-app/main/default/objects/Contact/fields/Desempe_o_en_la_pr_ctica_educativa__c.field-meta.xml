@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Desempe_o_en_la_pr_ctica_educativa__c</fullName>
+    <description>Buen desempeño, se mostró proactivo y no faltó.</description>
+    <externalId>false</externalId>
+    <label>Desempeño en la práctica educativa</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>TextArea</type>
+</CustomField>

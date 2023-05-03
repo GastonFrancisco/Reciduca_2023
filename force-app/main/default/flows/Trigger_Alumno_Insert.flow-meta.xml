@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>53.0</apiVersion>
+    <decisions>
+        <name>Es_alumno</name>
+        <label>Es alumno?</label>
+        <locationX>182</locationX>
+        <locationY>335</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Si_es_alumno</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Obtener_RecordType</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>NPSP_Becarios</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Crear_boletin</targetReference>
+            </connector>
+            <label>Sí, es alumno</label>
+        </rules>
+    </decisions>
+    <description>Flow disparado con la creación de un Contact. Si es un alumno, crea un Boletín.</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>Anio_actual</name>
+        <dataType>String</dataType>
+        <expression>TEXT(YEAR(TODAY()))</expression>
+    </formulas>
+    <formulas>
+        <name>Obtener_RecordType</name>
+        <dataType>String</dataType>
+        <expression>{!$Record.RecordType.DeveloperName}</expression>
+    </formulas>
+    <interviewLabel>Trigger Alumno Insert {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Trigger Alumno Insert</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordCreates>
+        <name>Crear_boletin</name>
+        <label>Crear boletín</label>
+        <locationX>50</locationX>
+        <locationY>455</locationY>
+        <inputAssignments>
+            <field>Alumno__c</field>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Anio_calendario__c</field>
+            <value>
+                <elementReference>Anio_actual</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Anio_lectivo__c</field>
+            <value>
+                <elementReference>$Record.A_o_que_cursa__c</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Boletin__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <start>
+        <locationX>56</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Es_alumno</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>A_o_que_cursa__c</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
+        <object>Contact</object>
+        <recordTriggerType>Create</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

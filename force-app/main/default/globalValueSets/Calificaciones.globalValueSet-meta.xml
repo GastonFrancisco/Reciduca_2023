@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Excelente</fullName>
+        <default>false</default>
+        <label>Excelente</label>
+    </customValue>
+    <customValue>
+        <fullName>Muy bueno</fullName>
+        <default>false</default>
+        <label>Muy bueno</label>
+    </customValue>
+    <customValue>
+        <fullName>Bueno</fullName>
+        <default>false</default>
+        <label>Bueno</label>
+    </customValue>
+    <customValue>
+        <fullName>Regular</fullName>
+        <default>false</default>
+        <label>Regular</label>
+    </customValue>
+    <customValue>
+        <fullName>Mejorable</fullName>
+        <default>false</default>
+        <label>Mejorable</label>
+    </customValue>
+    <customValue>
+        <fullName>No evaluado</fullName>
+        <default>false</default>
+        <label>No evaluado</label>
+    </customValue>
+    <masterLabel>Calificaciones</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

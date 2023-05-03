@@ -1,0 +1,1049 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NPSP_Becarios</fullName>
+    <active>true</active>
+    <label>NPSP Becarios</label>
+    <picklistValues>
+        <picklist>A_o_que_cursa__c</picklist>
+        <values>
+            <fullName>5%C2%B0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>6%C2%B0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>7%C2%B0</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Candidato__c</picklist>
+        <values>
+            <fullName>A</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cubierto</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Donacion Honorarios</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Donacion Productos</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Donacion Servicios</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mesa Corporativa</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Publicidad</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sponsor</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Candidato_a_Padrino__c</picklist>
+        <values>
+            <fullName>A</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>B</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>C</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Categoria_Reciduca__c</picklist>
+        <values>
+            <fullName>Amigo mensual</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cena</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Consejo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Consejo Asesor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Donante unica vez</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Padrino mensual</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Proveedor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Voluntario</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Est_estudiando__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sí</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Est_trabajando__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sí</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Estado__c</picklist>
+        <values>
+            <fullName>Adeuda materias</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cursando</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Egresado</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>LeadSource</picklist>
+        <values>
+            <fullName>Amigo de alguien de Reciduca</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Call Center</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cenas Anteriores</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Diario</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Empresa PMR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Empresa para pasantias</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Evento</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Foro Social</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Referencias</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TMF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Visitas%2FCurso vivero</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Voluntario EDE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Voluntario del vivero</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Web</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Materias_previas__c</picklist>
+        <values>
+            <fullName>1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Materias_que_debe__c</picklist>
+        <values>
+            <fullName>Física</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Geografía</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Historia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lengua</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Matemática</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Otra</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Name</picklist>
+        <values>
+            <fullName>Dr%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Estimada</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Estimado</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Estimados</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lic%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sr%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sra%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sres%2E</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Participacion_Cena__c</picklist>
+        <values>
+            <fullName>2009</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2010</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2011</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2012</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2013</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Redacta_Esquela__c</picklist>
+        <values>
+            <fullName>Bloblo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Carola</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cecilia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>David</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ercilia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Florencia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Jorge</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lino</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Luis</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Male</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Maria</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Maria Elena</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Patricia</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Referente_1__c</picklist>
+        <values>
+            <fullName>AVU</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bloblo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Carola</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ceci</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ceci Ilvento</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Coordinacion Voluntarios</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>David</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Eleonora Goñi</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Erci</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Eugenie Tossounian</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Eze Ceballos</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Flor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Jorge</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Josefina Aramendi</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Juan Malagrino</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lino</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Luis Firmat</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Luis Riva</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Male</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Marcos Browne</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mariel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nico Federico</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PRMR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pata Carrere</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pato Caprile</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pia Rush</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reciduca</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ricky Moreno</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Santi Sarachian</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tarcisio</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Teresita Markous</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Referente_2__c</picklist>
+        <values>
+            <fullName>AVU</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bloblo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Carola</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ceci</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ceci Ilvento</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>David</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Eleonora Goñi</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Erci</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Eugenie Tossounian</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Flor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Jorge</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Josefina Aramendi</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Juan Malagrino</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lino</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Luis Firmat</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Luis Riva</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Male</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Marcos Browne</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mariel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nico Federico</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PRMR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pata Carrere</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pato Caprile</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pia Rush</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reciduca</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Santi Sarachian</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Teresita Markous</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Relacion_con_Referente__c</picklist>
+        <values>
+            <fullName>Amigo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cliente</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Companero de trabajo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Conocido</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Familiar</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Se_llev_materias_el_a_o_anterior__c</picklist>
+        <values>
+            <fullName>NO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SI</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Segmento__c</picklist>
+        <values>
+            <fullName>Corporativo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cubiertos</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fotografa de la noche</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Invitar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Solo mail</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Seguido_por__c</picklist>
+        <values>
+            <fullName>Llamador 1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Llamador 2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Llamador Principal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Solo mail</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Sexo__c</picklist>
+        <values>
+            <fullName>Femenino</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Masculino</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Tarjeta__c</picklist>
+        <values>
+            <fullName>AMERICAN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MASTER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VISA</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Tipo_de_Participacion_Cena_2011__c</picklist>
+        <values>
+            <fullName>Cubierto individual</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Donacion honorarios%2Fservicios</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Donacion mensual</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Donacion noche unica vez</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Donacion productos</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mesa 10 cubiertos</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mesa Directorio</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mesa Escritorio</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mesa Mostrador</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mesa Pupitre</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Publicidad Contratapa</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Publicidad Media Pagina</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Publicidad Pagina Entera</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Publicidad Retiracion Tapa%2FContratapa</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sponsor</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Tipo_de_participacion_Cena_2009__c</picklist>
+        <values>
+            <fullName>Cubierto personal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Donacion de la noche mensual</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Donacion de la noche unica vez</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Donacion productos</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mesa 10 cubiertos</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mesa Sponsor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Publicidad</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Tipo_de_participacion_cena_2010__c</picklist>
+        <values>
+            <fullName>Cubierto personal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Donacion de la noche mensual</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Donacion de la noche unica vez</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Donacion productos</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Donacion servicios u honorarios</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mesa 10 cubiertos</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mesa Directorio</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mesa Escritorio</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mesa Mostrador</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mesa Pupitre</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Publicidad Contratapa</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Publicidad Media Pagina</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Publicidad Pagina Entera</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Publicidad Retiro tapa%2FContrapa</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Tutor__c</picklist>
+        <values>
+            <fullName>Alejandra Avellaneda</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Axel Greene</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Carolina Martín</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Carolina Panadeiros</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cruz Pereyra Moine</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gabriela Muchenik</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lucio Paez</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Micaela Centurión</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Micaela Salas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Paula Muñiz</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rocío Giménez Zapiola</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rocío González</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Romina Bruni</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sabrina Campos</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Silvina Torella</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sofía Rodríguez</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>npe01__PreferredPhone__c</picklist>
+        <values>
+            <fullName>Home</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mobile</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Work</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>npe01__Preferred_Email__c</picklist>
+        <values>
+            <fullName>Alternate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Personal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Work</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>npe01__Primary_Address_Type__c</picklist>
+        <values>
+            <fullName>Home</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Work</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>npe01__Secondary_Address_Type__c</picklist>
+        <values>
+            <fullName>Home</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Work</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>npe01__SystemAccountProcessor__c</picklist>
+        <values>
+            <fullName>Individual</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>One-to-One</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>npo02__Naming_Exclusions__c</picklist>
+        <values>
+            <fullName>Household%5F%5Fc%2EFormal_Greeting%5F%5Fc</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Household%5F%5Fc%2EInformal_Greeting%5F%5Fc</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Household%5F%5Fc%2EName</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>npo02__SystemHouseholdProcessor__c</picklist>
+        <values>
+            <fullName>All Individual Contacts</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>All New or Edited Contacts</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Contacts</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>npsp__Sustainer__c</picklist>
+        <values>
+            <fullName>Active</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Former</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lapsed</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>
