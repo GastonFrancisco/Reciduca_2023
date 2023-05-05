@@ -18,19 +18,36 @@ export default class Boletin extends LightningElement {
     wiredInasistenciasResult = [];
     @api recordId;  //Id del boletín presente
     boolean = false;
+    columnsCalificacion = [];
+    columnsInasistencia = [];
 
     @wire(getRecord, { recordId: '$recordId', fields: CUATRIMESTRAL})
     boletin({ error, data }){
         if(data){
-            console.log(data.fields.Cuatrimestral__c.value);
+            let gradesColumn = [
+                { label: 'Materia', fieldName: 'MateriaName', editable: false },
+                { label: 'Primera evaluación', fieldName: 'Primer_trimestre__c', editable: true, type: 'number' },
+                { label: 'Segunda evaluación', fieldName: 'Segundo_trimestre__c', editable: true, type: 'number' },
+                { label: 'Tercera evaluación', fieldName: 'Tercer_trimestre__c', editable: true, type: 'number' },
+                { label: 'Final', fieldName: 'Final__c', editable: true, type: 'number' },
+                { label: 'Estado', fieldName: 'Estado__c', type: 'text'},
+                {
+                    type: 'action',
+                    typeAttributes: { rowActions: actions },
+                }
+            ];
+            let absenceColumn = [
+                { label: 'Primera evaluación', fieldName: 'Primer_trimestre__c', editable: true, type: 'number' },
+                { label: 'Segunda evaluación', fieldName: 'Segundo_trimestre__c', editable: true, type: 'number' },
+                { label: 'Tercera evaluación', fieldName: 'Tercer_trimestre__c', editable: true, type: 'number' },
+            ];
             this.boolean = data.fields.Cuatrimestral__c.value;
-            console.log(this.boolean);
             if(this.boolean){
-                this.columnsCalificacion.splice(3,1);
-                console.log(this.columnsCalificacion);
-                this.columnsInasistencia.splice(2,1);
-                console.log(this.columnsInasistencia);
+                gradesColumn.splice(3,1);
+                absenceColumn.splice(2,1);
             }
+            this.columnsCalificacion = gradesColumn;
+            this.columnsInasistencia = absenceColumn;
         } else if (error){
             console.log(error);
         }
@@ -40,24 +57,6 @@ export default class Boletin extends LightningElement {
         return getFieldValue(this.boletin.data, CUATRIMESTRAL);
     }
 
-    columnsCalificacion = [
-        { label: 'Materia', fieldName: 'MateriaName', editable: false },
-        { label: 'Primera evaluación', fieldName: 'Primer_trimestre__c', editable: true, type: 'number' },
-        { label: 'Segunda evaluación', fieldName: 'Segundo_trimestre__c', editable: true, type: 'number' },
-        { label: 'Tercera evaluación', fieldName: 'Tercer_trimestre__c', editable: true, type: 'number' },
-        { label: 'Final', fieldName: 'Final__c', editable: true, type: 'number' },
-        { label: 'Estado', fieldName: 'Estado__c', type: 'text'},
-        {
-            type: 'action',
-            typeAttributes: { rowActions: actions },
-        }
-    ];
-
-    columnsInasistencia = [
-        { label: 'Primera evaluación', fieldName: 'Primer_trimestre__c', editable: true, type: 'number' },
-        { label: 'Segunda evaluación', fieldName: 'Segundo_trimestre__c', editable: true, type: 'number' },
-        { label: 'Tercera evaluación', fieldName: 'Tercer_trimestre__c', editable: true, type: 'number' },
-    ];
 
     //trae las calificaciones con lookup al boletín
     //crea el campo JS MateriaName a partir del campo Apex Materia__r.Name
